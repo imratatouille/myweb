@@ -1,21 +1,34 @@
 import React from "react";
-import logo from "./w.svg";
+import logo from "./doge.jpeg";
 import "./App.css";
 
-function App() {
+const App: React.FC = () => {
     return (
-        <div className='App'>
-            <header className='App-header'>
-                <img src={logo} className='App-logo' alt='logo' />
-                <p>
-                    Edit <code>src/App.tsx</code> and save to reload.
-                </p>
-                <a className='App-link' href='https://reactjs.org' target='_blank' rel='noopener noreferrer'>
-                    Learn React
-                </a>
+        <div className='container'>
+            <header>
+                <p>타이틀</p>
+                <div>
+                    <ul>
+                        <li>
+                            <a href='#'>메뉴1</a>
+                        </li>
+                        <li>
+                            <a href='#'>메뉴2</a>
+                        </li>
+                        <li>
+                            <a href='#'>메뉴3</a>
+                        </li>
+                    </ul>
+                </div>
             </header>
+            <section id='st1'>
+                <p>아름다운 바다</p>
+                <img src={logo} />
+            </section>
+            <section id='st2'></section>
+            <section id='st3'></section>
         </div>
     );
-}
+};
 
 export default App;
